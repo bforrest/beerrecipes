@@ -1,0 +1,29 @@
+{
+  "siteName": {
+    "value": "beerrecipes"
+  },
+  "hostingPlanName": {
+    "value": "Default0"
+  },
+  "siteLocation": {
+    "value": "East US"
+  },
+  "sku": {
+    "value": "Free"
+  },
+  "workerSize": {
+    "value": "0"
+  },
+  "siteMode": {
+    "value": "Limited"
+  },
+  "computeMode": {
+    "value": "0"
+  },
+  "subscriptionId": {
+    "value": "83afe797-7b2e-4884-a1c3-0c1df66c65b8"
+  },
+  "resourceGroup": {
+    "value": "Default-Web-EastUS"
+  }
+}

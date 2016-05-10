@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "beerrecipes", "beerrecipes\beerrecipes.csproj", "{7D1A7C98-7984-434F-BE78-3F0BD604AF22}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{5E84CDD5-7564-40A2-813A-A5595F72CA1F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{2F21FD24-C7BC-4D30-BE7C-E7E7EF2A5BDB}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{C49F1687-19F8-4F4B-A020-5C5C9A3A2A6E}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\beerrecipes.json = PublishScripts\Templates\beerrecipes.json
+		PublishScripts\Templates\beerrecipes.param.dev.json = PublishScripts\Templates\beerrecipes.param.dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D1A7C98-7984-434F-BE78-3F0BD604AF22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D1A7C98-7984-434F-BE78-3F0BD604AF22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D1A7C98-7984-434F-BE78-3F0BD604AF22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D1A7C98-7984-434F-BE78-3F0BD604AF22}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2F21FD24-C7BC-4D30-BE7C-E7E7EF2A5BDB} = {5E84CDD5-7564-40A2-813A-A5595F72CA1F}
+		{C49F1687-19F8-4F4B-A020-5C5C9A3A2A6E} = {5E84CDD5-7564-40A2-813A-A5595F72CA1F}
+	EndGlobalSection
+EndGlobal
