@@ -12,19 +12,19 @@ namespace beerrecipes.Models
 
         }
 
-        public Grain(int Id)
+        public Grain(string Id)
         {
-            this.Id = Id;
+            this.id = Id;
         }
 
-        public int Id { get; set; }
+        public string id { get; set; }
 
-        public string Name { get;  set; }
+        public string name { get;  set; }
 
-        public string Lovibond{ get; set; }
+        public string lovibond{ get; set; }
 
-        public string SpecificGravity { get; set; }
+        public string specificGravity { get; set; }
 
-        public string Description { get; set; }
+        public string description { get; set; }
     }
 }
