@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <ApplicationInsightsResourceId>/subscriptions/83afe797-7b2e-4884-a1c3-0c1df66c65b8/resourcegroups/Default-Web-EastUS/providers/microsoft.insights/components/beerrecipes</ApplicationInsightsResourceId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -320,6 +321,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Grains.cshtml" />
+    <Content Include="Service References\Application Insights\ConnectedService.json" />
     <None Include="web.secrets.config" />
   </ItemGroup>
   <ItemGroup>
