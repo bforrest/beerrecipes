@@ -21,15 +21,9 @@ namespace beerrecipes.Controllers
                 new Grain { id = "5", name = "Lager Malt", lovibond = "1.6°", specificGravity = "1.038", description = "Used to make light colored and flavored lagers."}
             };
 
-        public async Task<ActionResult> IndexAsync()
+        public HttpResponseMessage Get()
         {
-            var items = await DocumentDBRepository<Grain>.GetItemsAsync(d => !d.Completed);
-            return View(items);
-        }
-
-        private ActionResult View(object items)
-        {
-            throw new NotImplementedException();
+            return Request.CreateResponse(HttpStatusCode.OK, grains);
         }
 
         public HttpResponseMessage Post([FromBody]Grain request)

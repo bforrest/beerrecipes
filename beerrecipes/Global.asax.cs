@@ -18,6 +18,7 @@ namespace beerrecipes
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            DocumentDBRepository<beerrecipes.Models.Grain>.Initialize();
         }
     }
 }
