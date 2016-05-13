@@ -9,7 +9,7 @@ namespace beerrecipes.Models
     {
         public Grain()
         {
-
+            this.id = Guid.NewGuid().ToString();
         }
 
         public Grain(string Id)
