@@ -16,12 +16,5 @@ namespace beerrecipes.Controllers
 
             return View();
         }
-
-        public async System.Threading.Tasks.Task<ActionResult> Grains()
-        {
-            //get stuff
-            var items = await DocumentDBRepository<Grain>.GetItemsAsync( x => x != null);
-            return View(items);
-        }
     }
 }
