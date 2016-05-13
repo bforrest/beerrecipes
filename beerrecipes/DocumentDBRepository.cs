@@ -45,6 +45,16 @@ namespace beerrecipes
             return await client.CreateDocumentAsync(UriFactory.CreateDocumentCollectionUri(DatabaseId, CollectionId), item);
         }
 
+        public static async Task<Document> ReplaceItemAsync(string id, T item)
+        {
+            return await client.ReplaceDocumentAsync(UriFactory.CreateDocumentUri(DatabaseId, CollectionId, id), item);
+        }
+
+        public static async Task<Document> DeleteItemAsyn(string id)
+        {
+            return await client.DeleteDocumentAsync(UriFactory.CreateDocumentUri(DatabaseId, CollectionId, id));
+        }
+
         private static async Task CreateDatabaseIfNotExistsAsync()
         {
             try

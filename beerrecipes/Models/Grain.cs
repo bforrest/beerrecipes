@@ -7,16 +7,6 @@ namespace beerrecipes.Models
 {
     public class Grain
     {
-        public Grain()
-        {
-            this.id = Guid.NewGuid().ToString();
-        }
-
-        public Grain(string Id)
-        {
-            this.id = Id;
-        }
-
         public string id { get; set; }
 
         public string name { get;  set; }

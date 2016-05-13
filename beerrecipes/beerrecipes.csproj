@@ -328,6 +328,8 @@
     <Content Include="Views\GrainCrud\Index.cshtml" />
     <Content Include="Views\GrainCrud\Create.cshtml" />
     <Content Include="Views\GrainCrud\Details.cshtml" />
+    <Content Include="Views\GrainCrud\Edit.cshtml" />
+    <Content Include="Views\GrainCrud\Delete.cshtml" />
     <None Include="web.secrets.config" />
   </ItemGroup>
   <ItemGroup>
