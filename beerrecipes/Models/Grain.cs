@@ -7,16 +7,6 @@ namespace beerrecipes.Models
 {
     public class Grain
     {
-        public Grain()
-        {
-
-        }
-
-        public Grain(string Id)
-        {
-            this.id = Id;
-        }
-
         public string id { get; set; }
 
         public string name { get;  set; }

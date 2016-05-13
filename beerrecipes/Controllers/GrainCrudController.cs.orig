@@ -21,7 +21,11 @@ namespace beerrecipes.Controllers
         public async Task<ActionResult> Details(string id)
         {
             var item = await DocumentDBRepository<Grain>.GetItemsAsync(x => x.id == id);
+<<<<<<< HEAD
+            return View(item);
+=======
             return View(item.First());
+>>>>>>> working
         }
 
         // GET: GrainCrud/Create
@@ -37,7 +41,11 @@ namespace beerrecipes.Controllers
             try
             {
                 // TODO: Add insert logic here
+<<<<<<< HEAD
+                await DocumentDBRepository<Grain>.CreateItemAsync(grain);
+=======
                 var item = await DocumentDBRepository<Grain>.CreateItemAsync(grain);
+>>>>>>> working
                 return RedirectToAction("Index");
             }
             catch
@@ -50,16 +58,29 @@ namespace beerrecipes.Controllers
         public async Task<ActionResult> Edit(string id)
         {
             var item = await DocumentDBRepository<Grain>.GetItemsAsync(x => x.id == id);
+<<<<<<< HEAD
+            return View(item);
+=======
             return View(item.First());
+>>>>>>> working
         }
 
         // POST: GrainCrud/Edit/5
         [HttpPost]
+<<<<<<< HEAD
+        public ActionResult Edit(string id, FormCollection collection)
+        {
+            try
+            {
+                // TODO: Add update logic here
+
+=======
         public async Task<ActionResult> Edit(string id, Grain grain)
         {
             try
             {
                 var doc = await DocumentDBRepository<Grain>.ReplaceItemAsync(id, grain);
+>>>>>>> working
                 return RedirectToAction("Index");
             }
             catch
@@ -68,22 +89,38 @@ namespace beerrecipes.Controllers
             }
         }
 
+<<<<<<< HEAD
+        // GET: GrainCrud/Delete/5
+        public ActionResult Delete(string id)
+        {
+            return View();
+=======
 
         [HttpGet]
         public async Task<ActionResult> Delete(string id)
         {
             var item = await DocumentDBRepository<Grain>.GetItemsAsync(x => x.id == id);
             return View(item.First());
+>>>>>>> working
         }
 
         // POST: GrainCrud/Delete/5
         [HttpPost]
+<<<<<<< HEAD
+        public ActionResult Delete(string id, FormCollection collection)
+        {
+            try
+            {
+                // TODO: Add delete logic here
+
+=======
         public ActionResult Delete(string id, FormCollection form)
         {
             try
             {
                 var success = DocumentDBRepository<Grain>.DeleteItemAsyn(id);
                 // TODO: Add toast message here
+>>>>>>> working
                 return RedirectToAction("Index");
             }
             catch
